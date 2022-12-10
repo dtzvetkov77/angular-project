@@ -72,3 +72,13 @@ export const sample_tags = [
   { name: 'Fry', count: 1 },
   { name: 'Soup', count: 1 },
 ]
+
+export const sample_users = [
+  {
+    name: "Daniel Tsvetkov",
+    email: "zvetkovd@gmail.com",
+    password: "12345",
+    address: "Konstantin Velichkov 59",
+    isAdmin: false,
+  },
+];

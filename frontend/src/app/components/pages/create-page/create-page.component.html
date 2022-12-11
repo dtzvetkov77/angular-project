@@ -1,6 +1,54 @@
 <div class="container">
-    <div class="details">
-      <app-title title="Create"></app-title>
-      <default-button text="Create"></default-button>
-    </div>
-    </div>
+  <div class="details">
+    <app-title title="Create"></app-title>
+    <form [formGroup]="createForm" (ngSubmit)="submit()">
+      <text-input
+      [control]="fc.name"
+      [showErrorsWhen]="isSubmitted"
+      label="Name">
+    `</text-input>
+
+    <text-input
+    [control]="fc.price"
+    [showErrorsWhen]="isSubmitted"
+    label="Price">
+  `</text-input>
+
+
+  <text-input
+  [control]="fc.tags"
+  [showErrorsWhen]="isSubmitted"
+  label="Tags">
+`</text-input>
+
+<text-input
+  [control]="fc.favorite"
+  [showErrorsWhen]="isSubmitted"
+  label="Favorite">
+`</text-input>
+
+
+<text-input
+[control]="fc.imageUrl"
+[showErrorsWhen]="isSubmitted"
+label="imageUrl">
+`</text-input>
+
+<text-input
+[control]="fc.origins"
+[showErrorsWhen]="isSubmitted"
+label="Origins">
+`</text-input>
+
+<text-input
+[control]="fc.cookTime"
+[showErrorsWhen]="isSubmitted"
+label="Cook Time">
+`</text-input>
+
+
+<default-button text="Create"></default-button>
+
+    </form>
+  </div>
+</div>

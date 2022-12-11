@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { FOODS_BY_SEARCH_URL, FOODS_BY_TAG_URL, FOODS_TAGS_URL, FOODS_URL, FOOD_BY_ID_URL } from '../shared/constants/urls';
+import { FOODS_BY_SEARCH_URL, FOODS_BY_TAG_URL, FOODS_TAGS_URL, FOODS_URL, FOOD_BY_ID_URL, FOOD_CREATE_URL } from '../shared/constants/urls';
+import { IFoodCreate } from '../shared/interfaces/IFoodCreate';
 import { Food } from '../shared/models/Food';
 import { Tag } from '../shared/models/Tag';
 
@@ -33,4 +34,8 @@ export class FoodService {
   getFoodById(foodId:string):Observable<Food>{
     return this.http.get<Food>(FOOD_BY_ID_URL + foodId);
   }
+
+  createFood(footData: IFoodCreate): Observable<Food> {
+    return this.http.post<Food>(FOOD_CREATE_URL, footData);
+  } 
 }

@@ -76,4 +76,25 @@ router.get("/tags", asyncHandler(
     }
   ))
 
+
+  router.post('/create', asyncHandler(
+    async (req, res) => {
+      const {name, price, tags, favorite,imageUrl,origins,cookTime} = req.body; 
+      const newFood = {
+        name,
+        price,
+        tags,
+        favorite,
+        imageUrl,
+        origins,
+        cookTime,
+      }
+      
+     
+       await Food.create(newFood);
+    }
+  ))
+  
+
+
 module.exports = router;

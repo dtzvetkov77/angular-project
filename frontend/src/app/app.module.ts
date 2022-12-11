@@ -41,7 +41,7 @@ import { RegisterPageComponent } from './components/pages/register-page/register
     InputValidationComponent,
     TextInputComponent,
     DefaultButtonComponent,
-    RegisterPageComponent
+    RegisterPageComponent,
   ],
   imports: [
     BrowserModule,

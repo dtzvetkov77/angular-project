@@ -34,7 +34,7 @@ router.post("/login", asyncHandler(
       router.post('/register', asyncHandler(
         async (req, res) => {
           const {name, email, password, address} = req.body;
-          const user = await UserModel.findOne({email});
+          const user = await User.findOne({email});
           if(user){
             res.status(HTTP_BAD_REQUEST)
             .send('User is already exist, please login!');
@@ -70,9 +70,15 @@ router.post("/login", asyncHandler(
         expiresIn: "30d",
       }
     );
+    return {
+      id: user.id,
+      email: user.email,
+      name: user.name,
+      address: user.address,
+      isAdmin: user.isAdmin,
+      token: token
+    };
   
-    user.token = token;
-    return user;
   };
   
 

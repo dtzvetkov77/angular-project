@@ -5,6 +5,7 @@ import { CreatePageComponent } from './components/pages/create-page/create-page.
 import { FoodPageComponent } from './components/pages/food-page/food-page.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { LoginPageComponent } from './components/pages/login-page/login-page.component';
+import { RegisterPageComponent } from './components/pages/register-page/register-page.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,9 @@ const routes: Routes = [
   },
   {
     path: 'login', component: LoginPageComponent
+  },
+  {
+    path: 'register', component: RegisterPageComponent
   },
   {
     path: 'create', component: CreatePageComponent

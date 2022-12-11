@@ -5,19 +5,19 @@
         <ul>
           <li *ngIf="!isAuth">
             <a routerLink="/login">Login</a>
+            <a routerLink="/register">Register</a>
           </li>
           <li *ngIf="isAdmin">
             <a routerLink="/create">Create</a>
           </li>
           <li *ngIf="isAuth" class="menu-container">
             <a routerLink="/dashboard">{{user.name}}</a>
-            <div class="menu">
-              <a routerLink="/profile">Profile</a>
+            <div ngIf="!isAdmin" class="menu">
               <a routerLink="/orders">Orders</a>
               <a (click)="logout()">Logout</a>
             </div>
           </li>
-          <li>
+          <li *ngIf="isAuth && !isAdmin">
             <a routerLink="/cart-page">
               Cart <span *ngIf="cartQuantity">{{cartQuantity}}</span>
             </a>

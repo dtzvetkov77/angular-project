@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminGuard } from './auth/admin.guard';
 import { AuthGuard } from './auth/auth.guard';
 import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
+import { CheckoutPageComponent } from './components/pages/checkout-page/checkout-page.component';
 import { CreatePageComponent } from './components/pages/create-page/create-page.component';
 import { FoodPageComponent } from './components/pages/food-page/food-page.component';
 import { HomeComponent } from './components/pages/home/home.component';
@@ -35,6 +36,9 @@ const routes: Routes = [
   {
     path: 'create', component: CreatePageComponent, canActivate:[AdminGuard]
   },
+  {
+    path: 'checkout', component: CheckoutPageComponent, canActivate:[AuthGuard]
+  }
 ];
 
 @NgModule({

@@ -40,6 +40,7 @@ export class InputValidationComponent implements OnInit,OnChanges {
     }
 
     const errorKeys = Object.keys(errors);
+    
     this.errorMessages = errorKeys.map(key => VALIDATORS_MESSAGES[key]);
 
   }

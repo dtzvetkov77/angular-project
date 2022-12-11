@@ -22,6 +22,9 @@ import { TextInputComponent } from './components/partials/text-input/text-input.
 import { DefaultButtonComponent } from './components/partials/default-button/default-button.component';
 import { RegisterPageComponent } from './components/pages/register-page/register-page.component';
 
+import { CheckoutPageComponent } from './components/pages/checkout-page/checkout-page.component';
+import { OrderItemListComponent } from './components/partials/order-item-list/order-item-list.component';
+
 
 
 @NgModule({
@@ -42,6 +45,8 @@ import { RegisterPageComponent } from './components/pages/register-page/register
     TextInputComponent,
     DefaultButtonComponent,
     RegisterPageComponent,
+    OrderItemListComponent,
+    CheckoutPageComponent,
   ],
   imports: [
     BrowserModule,

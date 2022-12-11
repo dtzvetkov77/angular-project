@@ -11,10 +11,6 @@ const foodSchema = mongoose.Schema({
     tags: {
         type: [String]
     },
-    favorite: {
-        type: Boolean,
-        default: false
-    },
     imageUrl: {
         type: String,
         required: true

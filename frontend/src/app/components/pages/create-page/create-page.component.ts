@@ -27,7 +27,6 @@ export class CreatePageComponent implements OnInit {
       name: ['', [Validators.required, Validators.minLength(3)]],
       price: ['', [Validators.required]],
       tags: ['', [Validators.required]],
-      favorite: ['', Validators.required],
       imageUrl: ['', [Validators.required]],
       origins: ['', [Validators.required]],
       cookTime: ['', [Validators.required]],
@@ -48,7 +47,6 @@ export class CreatePageComponent implements OnInit {
       name: fv.name,
       price: fv.price,
       tags: fv.tags,
-      favorite: fv.favorite,
       imageUrl: fv.imageUrl,
       origins: fv.origins,
       cookTime: fv.cookTime

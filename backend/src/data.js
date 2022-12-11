@@ -1,4 +1,4 @@
-export const sample_foods = [
+exports.sample_foods = [
   {
     id:'1',
     name: 'Pizza Pepperoni',
@@ -62,7 +62,7 @@ export const sample_foods = [
 ]
 
 
-export const sample_tags = [
+exports.sample_tags = [
   { name: 'All', count: 6 },
   { name: 'FastFood', count: 4 },
   { name: 'Pizza', count: 2 },
@@ -73,12 +73,19 @@ export const sample_tags = [
   { name: 'Soup', count: 1 },
 ]
 
-export const sample_users = [
+exports.sample_users = [
   {
     name: "Daniel Tsvetkov",
     email: "zvetkovd@gmail.com",
     password: "12345",
     address: "Konstantin Velichkov 59",
     isAdmin: false,
+  },
+  {
+    name: "Admin",
+    email: "admin@gmail.com",
+    password: "admin",
+    address: "Konstantin Velichkov 59",
+    isAdmin: true,
   },
 ];

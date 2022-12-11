@@ -28,4 +28,8 @@ export class HeaderComponent {
   get isAuth(){
     return this.user.token;
   }
+
+  get isAdmin(){
+      return this.user.isAdmin 
+  }
 }

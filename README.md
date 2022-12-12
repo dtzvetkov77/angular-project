@@ -3,7 +3,7 @@
 1.Create an angular application
  1.Create project folder
  2.Install angular 
- 3. Create frontend app
+ 3.Create frontend app
 
 2.Add header
 1. Create header component
@@ -84,7 +84,6 @@
     7.  npm install express cors
     8.  Create server.ts
         1. install @types
-        2. Add Apis
     9.  npm install nodemon ts-node --save-dev
     10. Add urs.ts to frontend
     11. Add HttpClient module
@@ -124,17 +123,15 @@
     3. Text Input
     4. Default Button
 
-14. Connect Login API To MongoDB Atlas
+14. Connect Login To MongoDB 
     1. Moving Apis into routers
-    2. Create MongoDB Atlas
-    3. Create .env file
-    4. Install
+    2. Create MongoDB 
+    3. Install
        1. mongoose
-       2. dotenv
-       3. bcryptjs
-       4. express-async-handler
-    5. Connect to MongoDB Atlas
-    6. Use MongoDB instead of data.ts in apis
+       2. bcryptjs
+       3. express-async-handler
+    4. Connect to MongoDB
+    5. Use MongoDB instead of data.ts
 
 
 15. Register User
@@ -144,34 +141,13 @@
     4.  Add Register Component
 
 
-16. Loading!
-    1.  Add Image 
-    2.  Add Component
-    3.  Add Service
-    4.  Add Interceptor
-
-
-
-
-17. Checkout Page
+16. Checkout Page
     1.  Create Order Model
     2.  Create Checkout Page Component
         1.  Add To Router   
     3.  Add User to User Service 
     4.  Add Cart to Cart Service 
     5.  Create Order Items List Component
-    6.  Adding Map To The Checkout Page
-        1.  Add Leaflet npm package
-            1.  Add @types/leaflet
-            2.  Add Css to angular.json
-        2.  Add AddressLatLng to Order Model
-        3.  Create Map component
-            1.  Add to checkout page
-            2.  Add TS
-                1.  Change app-map selector to map
-            3.  Add Html
-            4.  Add CSS
-        4.  Add Auth Guard
     7.  Save Order
         1. Add Order Model
         2. Add Order Status Enum
@@ -179,5 +155,4 @@
         4. Add Order Router
            1. Add create API
         5. Add Order Urls to urls.ts
-        7. Add Order Service
-           1. Add create Method
+      

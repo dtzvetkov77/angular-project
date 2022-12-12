@@ -24,6 +24,7 @@ import { RegisterPageComponent } from './components/pages/register-page/register
 
 import { CheckoutPageComponent } from './components/pages/checkout-page/checkout-page.component';
 import { OrderItemListComponent } from './components/partials/order-item-list/order-item-list.component';
+import { ThanksOrderPageComponent } from './components/pages/thanks-order-page/thanks-order-page.component';
 
 
 
@@ -47,6 +48,7 @@ import { OrderItemListComponent } from './components/partials/order-item-list/or
     RegisterPageComponent,
     OrderItemListComponent,
     CheckoutPageComponent,
+    ThanksOrderPageComponent,
   ],
   imports: [
     BrowserModule,

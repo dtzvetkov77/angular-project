@@ -1,158 +1,33 @@
-##Project 
+## Project Description
 
-1.Create an angular application
-1.Create project folder
-2.Install angular 
-3.Create frontend app
+This project aims to create an Angular application for a food-related website. The application will have various features to showcase and search for different food items. Users will be able to view food items, search for specific foods, filter foods by tags, add items to a cart, and place orders.
 
-2.Add header
-1. Create header component
-2. Add HTML 
-3. Add CSS
+Here is an overview of the major tasks involved in developing the project:
 
-3.List foods
- 1.Create food model
- 2. Create data.ts
-       1. Add sample foods
-    3. Add images to assets
-    4. Create Food service
-    5. Create Home component
-       1. Add ts
-       2. Add html
-       3. Add css
+1. **Angular Application Setup**: Create the project folder and install Angular to set up the frontend application.
 
-6. Search
-   1. Add method to Food service
-   2. Add search route
-   3. Show search result in Home component
-   4. Generate search component
-      1. Add to home component
-      2. Add ts
-      3. Add html
-      4. Add css
-   
-7. Tags Bar
-   1. Create Tag model
-   2. Add sample tags to data.ts
-   3. Food service
-      1. Add get all tags method
-      2. Add get all foods by tag method
-   4. Add tags route
-   5. Show tag result in Home component
-   6. Generate Tags component
-      1. Add to home component
-      2. Add ts
-      3. Add html
-      4. Add css
+2. **Header Component**: Develop a header component that will be displayed on all pages of the application. This component will contain HTML markup and CSS styles to create an appealing and consistent header.
 
-8. Food Page
-   1. Add method to food service
-   2. Generate Food Page component
-      1. Add Route
-      2. Add ts
-      3. Add html
-      4. Add css
+3. **Listing Foods**: Create a food model to represent food items and define their properties. Implement a data.ts file to store sample food data. This file will also include images of the food items stored in the assets folder. Develop a Food service to handle data retrieval and manipulation. Create the Home component, which will display the food items using HTML, TypeScript, and CSS.
 
-9. Cart Page
-   1. Create CartItem Model
-   2. Create Cart Model
-   3. Generate Cart service
-   4. Add to Cart Button in Food Page
-   5. Generate Cart page component
-      1. Add Route
-      2. Add ts
-      3. Add html
-      4. Add css
+4. **Search Functionality**: Enhance the application by adding a search feature. Implement a search method in the Food service to filter food items based on user input. Create a search route and display search results in the Home component. Generate a Search component to provide a dedicated search interface with its HTML, TypeScript, and CSS.
 
-10. Not Found!
-    1. Generate Component
-       1. Add ts
-       2. Add html
-       3. Add css
-    2. Add To Pages
-       1. Home Page
-       2. Food Page
-       3. Cart Page
+5. **Tags Functionality**: Extend the application to include tags for categorizing food items. Introduce a Tag model to represent tags and add sample tags to the data.ts file. Enhance the Food service to retrieve all tags and filter foods by selected tags. Implement a tags route and display tag results in the Home component. Generate a Tags component to provide a user interface for selecting tags and viewing associated food items.
 
-11. Connect To Backend
-    1.  Create backend folder
-    2.  npm init
-    3.  npm install typescript
-    4.  Create tsconfig.json
-    5.  Create .gitignore
-    6.  Copy data.ts to backend/src
-    7.  npm install express cors
-    8.  Create server.ts
-        1. install @types
-    9.  npm install nodemon ts-node --save-dev
-    10. Add urs.ts to frontend
-    11. Add HttpClient module
-    12. Update food service
+6. **Food Page**: Develop a Food Page component to display detailed information about a specific food item. Add a method to the Food service to retrieve information about a particular food item. Configure routing to navigate to the Food Page component when a user selects a food item.
 
-12. Login Page
-    1.  Generate Component
-        1.  Add to routes
-        2.  Add ts 
-        3.  Add html
-            1.  Import Reactive Forms Module
-        4.  Add Css
-    2.  Add Login Api
-        1.  Use json
-        2.  Add jsonwebtoken
-        3.  Test Using Postman
-    
-    3.  Generate User Service
-        1.  Generate User model
-        2.  Add User Subject
-        3.  Add Login Method   
-            1.  Add User Urls
-            2.  Generate IUserLogin interface
-            3.  Add ngx-toastr
-                1.  Import Module
-                2.  Import BrowserAnimationsModule
-                3.  Add styles in angular.json
-            4.  Add to Header
-        1. Add Local Storage methods
-        2. Add Logout Method
-           1. Add to Header
+7. **Cart Functionality**: Implement a shopping cart feature that allows users to add food items to their cart. Create CartItem and Cart models to represent the cart and its items. Develop a Cart service to handle cart operations. Add a "Add to Cart" button on the Food Page component to enable users to add items to their cart. Generate a Cart Page component to display the cart items with options to modify quantities or remove items.
 
+8. **User Authentication**: Introduce user authentication by creating a Login Page component. Implement login functionality using APIs and JSON Web Tokens (JWT). Generate a User Service to handle user-related operations, including login and logout. Develop components for the Login Page, including input containers, input validation, text inputs, and a default button.
 
-13. Make Components For Login Page
-    1. Input Container
-    2. Input Validation
-    3. Text Input
-    4. Default Button
+9. **Connect to MongoDB**: Connect the application to a MongoDB database to store food and user information. Utilize packages like Mongoose, bcryptjs, and express-async-handler to facilitate database operations. Migrate data from the data.ts file to the MongoDB database.
 
-14. Connect Login To MongoDB 
-    1. Moving Apis into routers
-    2. Create MongoDB 
-    3. Install
-       1. mongoose
-       2. bcryptjs
-       3. express-async-handler
-    4. Connect to MongoDB
-    5. Use MongoDB instead of data.ts
+10. **Register User**: Implement a registration feature to allow users to create new accounts. Add a register API and corresponding service method. Create a Register Component to display the registration form and link it to the registration API.
 
+11. **Checkout Page**: Create an Order model to represent orders placed by users. Develop a Checkout Page component where users can review their cart items, provide necessary information, and place orders. Save the order details using an Order Router and display the order status.
 
-15. Register User
-    1.  Add Register api
-    2.  Add Register service method
-    3.  Add Register link 
-    4.  Add Register Component
+12. **Not Found Page**: Generate a Not Found component to display when users navigate to non-existent pages. Include this component in the Home Page, Food Page, and Cart Page to handle invalid routes.
 
+This project aims to provide an interactive
 
-16. Checkout Page
-    1.  Create Order Model
-    2.  Create Checkout Page Component
-        1.  Add To Router   
-    3.  Add User to User Service 
-    4.  Add Cart to Cart Service 
-    5.  Create Order Items List Component
-    7.  Save Order
-        1. Add Order Model
-        2. Add Order Status Enum
-        3. Add Auth Middleware
-        4. Add Order Router
-           1. Add create API
-        5. Add Order Urls to urls.ts
-      
+ and user-friendly food website where users can explore and order their favorite food items.
